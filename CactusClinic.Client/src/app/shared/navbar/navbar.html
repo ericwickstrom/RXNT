@@ -1,0 +1,30 @@
+<nav class="bg-clinic-primary text-white shadow-lg">
+  <div class="container mx-auto px-4">
+    <div class="flex justify-between items-center h-16">
+      <a class="flex items-center space-x-2 text-xl font-semibold" routerLink="/dashboard">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M10 2L3 7v11a1 1 0 001 1h3v-6h6v6h3a1 1 0 001-1V7l-7-5z"/>
+        </svg>
+        <span>CactusClinic</span>
+      </a>
+      
+      <div class="flex space-x-1">
+        <a class="px-3 py-2 rounded-md text-sm font-medium hover:bg-clinic-primary-dark transition-colors" 
+           routerLink="/dashboard" 
+           routerLinkActive="bg-clinic-primary-dark">
+          Dashboard
+        </a>
+        <a class="px-3 py-2 rounded-md text-sm font-medium hover:bg-clinic-primary-dark transition-colors" 
+           routerLink="/patients"
+           routerLinkActive="bg-clinic-primary-dark">
+          Patients
+        </a>
+        <a class="px-3 py-2 rounded-md text-sm font-medium hover:bg-clinic-primary-dark transition-colors" 
+           routerLink="/appointments"
+           routerLinkActive="bg-clinic-primary-dark">
+          Appointments
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>

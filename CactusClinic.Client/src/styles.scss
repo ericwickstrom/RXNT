@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom CSS (after Tailwind) */
+@layer components {
+  .btn-clinic-primary {
+    @apply bg-clinic-primary hover:bg-clinic-primary-dark text-white font-medium py-2 px-4 rounded transition-colors;
+  }
+  
+  .card-clinic {
+    @apply bg-white shadow-md rounded-lg p-6 border border-gray-200;
+  }
+  
+  .clinic-header {
+    @apply bg-clinic-primary text-white;
+  }
+  
+  .loading-spinner {
+    @apply flex justify-center items-center p-8;
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-gray-50 text-gray-900;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold;
+  }
+}
